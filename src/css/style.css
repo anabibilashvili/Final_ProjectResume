@@ -1,0 +1,109 @@
+@font-face {
+    font-family:"poppinsBold";
+    src: url(/src/font/Poppins-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family:"GlaciaRegular";
+    src: url(/src/font/GlacialIndifference-Regular.ttf);
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section1_txt{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  
+}
+.Roca{
+  font-size: 43px;
+  font-family: 'poppinsBold';
+  padding: 30px;
+  
+}
+span{
+  font-size: 49.7px;
+  font-family: 'GlaciaRegular';
+}
+.email{
+  font-size: 23.29px;
+  font-family: 'GlaciaRegular';
+  text-decoration: none;
+  color: black;
+}
+.slider-txt{
+  font-size: 71px;
+  font-family: 'GlaciaRegular';
+}
+.slider-right-text{
+  max-width: 582.07px;
+}
+.slider-part{
+  margin-top: -90px;
+  display: flex;
+  justify-content: space-around;
+  padding: 70px;
+}
+
+
+.section1_rightTxt{
+  position: relative;
+}
+.aboutMe{
+  top: 35%;
+  font-size: 43px;
+  position: absolute;
+  font-family: 'poppinsBold';
+}
+.aboutMe_01{
+  font-size: 158px;
+  font-family: 'poppinsBold';
+  opacity: 0.3;
+  padding: 0 30px;
+  
+}
+
+.slider_img img {
+  max-width: 400px;
+  width: 100%;
+  margin-left: 70px;
+  border-radius: 50%;
+  
+
+  
+  
+}
+.container_1{
+  background-color: #DDDDDD;
+  position: relative;
+}
+.slider_img{
+  max-width: 700px;
+}
+
+
+
+.slide {
+    display: none;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes fade {
+    0%, 100% {
+      opacity: 0;
+    }
+    20%, 80% {
+      opacity: 1;
+    }
+  }
+
