@@ -6,6 +6,10 @@
     font-family:"GlaciaRegular";
     src: url(/src/font/GlacialIndifference-Regular.ttf);
   }
+  @font-face {
+    font-family:"Montserrat-Bold";
+    src: url(/src/font/Montserrat-Bold.ttf);
+  }
   
 * {
   margin: 0;
@@ -27,7 +31,7 @@
   padding: 30px;
   
 }
-span{
+.slider-txt span{
   font-size: 49.7px;
   font-family: 'GlaciaRegular';
 }
@@ -64,7 +68,7 @@ span{
 .aboutMe_01{
   font-size: 158px;
   font-family: 'poppinsBold';
-  opacity: 0.3;
+  opacity: 0.7;
   padding: 0 30px;
   
 }
@@ -106,4 +110,27 @@ span{
       opacity: 1;
     }
   }
+
+  .socialMedia img{
+    max-width: 30px;
+    
+  }
+  .Satisfied_client{
+    font-size: 20px;
+    font-family: 'Montserrat-Bold';
+    margin-left: 50%;
+    padding-bottom: 10px;
+    border-bottom: solid 6px #E93656;
+    
+
+  }
+  .Satisfied_client span{
+    color: #E93656;
+    
+    
+    
+  }
+
+
+  
 
