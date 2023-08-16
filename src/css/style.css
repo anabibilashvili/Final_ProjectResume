@@ -1,76 +1,92 @@
 @font-face {
-    font-family:"poppinsBold";
-    src: url(/src/font/Poppins-ExtraBold.ttf);
-  }
-  @font-face {
-    font-family:"GlaciaRegular";
-    src: url(/src/font/GlacialIndifference-Regular.ttf);
-  }
-  @font-face {
-    font-family:"Montserrat-Bold";
-    src: url(/src/font/Montserrat-Bold.ttf);
-  }
-  
+  font-family: "poppinsBold";
+  src: url(/src/font/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "GlaciaRegular";
+  src: url(/src/font/GlacialIndifference-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(/src/font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "GlacialIndifference-Bold";
+  src: url(/src/font/GlacialIndifference-Regular.ttf);
+}
+@font-face {
+  font-family: "Muli-Light";
+  src: url(/src/font/Muli-Light.ttf);
+}
+@font-face {
+  font-family: "Muli-Regular";
+  src: url(/src/font/Muli-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.section1_txt{
-  
+.section1_txt {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  
-  
 }
-.Roca{
+
+.Roca {
   font-size: 43px;
-  font-family: 'poppinsBold';
+  font-family: "poppinsBold";
   padding: 30px;
-  
 }
-.slider-txt span{
+
+.slider-txt span {
   font-size: 49.7px;
-  font-family: 'GlaciaRegular';
+  font-family: "GlaciaRegular";
 }
-.email{
+
+.email {
   font-size: 23.29px;
-  font-family: 'GlaciaRegular';
+  font-family: "GlaciaRegular";
   text-decoration: none;
   color: black;
 }
-.slider-txt{
+
+.slider-txt {
   font-size: 71px;
-  font-family: 'GlaciaRegular';
+  font-family: "GlaciaRegular";
 }
-.slider-right-text{
+
+.slider-right-text {
   max-width: 582.07px;
 }
-.slider-part{
+
+.slider-part {
   margin-top: -90px;
   display: flex;
   justify-content: space-around;
   padding: 70px;
 }
 
-
-.section1_rightTxt{
+.section1_rightTxt {
   position: relative;
 }
-.aboutMe{
+
+.aboutMe {
   top: 35%;
   font-size: 43px;
   position: absolute;
-  font-family: 'poppinsBold';
+  font-family: "poppinsBold";
 }
-.aboutMe_01{
+
+.aboutMe_01 {
   font-size: 158px;
-  font-family: 'poppinsBold';
+  font-family: "poppinsBold";
   opacity: 0.7;
   padding: 0 30px;
-  
 }
 
 .slider_img img {
@@ -78,59 +94,119 @@
   width: 100%;
   margin-left: 70px;
   border-radius: 50%;
-  
-
-  
-  
 }
-.container_1{
-  background-color: #DDDDDD;
+
+.container_1 {
+  background-color: #dddddd;
   position: relative;
 }
-.slider_img{
+
+.slider_img {
   max-width: 700px;
 }
 
-
-
 .slide {
-    display: none;
-  }
-  .fade {
-    animation-name: fade;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  @keyframes fade {
-    0%, 100% {
-      opacity: 0;
-    }
-    20%, 80% {
-      opacity: 1;
-    }
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
   }
 
-  .socialMedia img{
-    max-width: 30px;
-    
+  20%,
+  80% {
+    opacity: 1;
   }
-  .Satisfied_client{
-    font-size: 20px;
-    font-family: 'Montserrat-Bold';
-    margin-left: 50%;
-    padding-bottom: 10px;
-    border-bottom: solid 6px #E93656;
-    
+}
 
-  }
-  .Satisfied_client span{
-    color: #E93656;
-    
-    
-    
-  }
+.socialMedia img {
+  max-width: 30px;
+}
 
+.Satisfied_client {
+  font-size: 20px;
+  font-family: "Montserrat-Bold";
+  margin-left: 50%;
+  padding-bottom: 10px;
+  border-bottom: solid 6px #e93656;
+}
 
+.Satisfied_client span {
+  color: #e93656;
+}
+
+.myName{
+  font-size: 30px;
+  font-family:'GlacialIndifference-Bold' ;
+
+}
+.position{
+  color:#DAAE19;
+  font-size: 14px;
+  font-family: 'Muli-Light';
   
+}
+.aboutMe_information{
+  max-width: 334px;
+  font-family: 'Muli-Regular';
+
+}
+.informationMe button{
+  padding: 15px 40px;
+  background-color: #E93656;
+  color: aliceblue;
+  border: none;
+}
+
+.myImage{
+  max-width: 430px;
+}
+.mySkill li{
+  list-style-type: none;
+  font-size: 20px;
+  font-family: 'GlacialIndifference-Bold';
+
+}
+.mySkill{
+  
+  max-width: 300px;
+}
+.mySkill li span{
+  color:#e93656;
+}
+
+.Html{
+  border-bottom: solid 9px #e93656 ;
+  max-width: 256px;
+  padding-bottom: 10px;
+}
+.JS{
+  border-bottom: solid 9px #e93656 ;
+  max-width: 190px;
+  padding-bottom: 10px;
+}
+
+.css,
+.Jira{
+  border-bottom: solid 9px #e93656 ;
+  max-width: 270px;
+  padding-bottom: 10px;
+}
+.section_2{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+
+
 
