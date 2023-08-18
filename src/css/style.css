@@ -68,7 +68,8 @@
   margin-top: -90px;
   display: flex;
   justify-content: space-around;
-  padding: 70px;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
 .section1_rightTxt {
@@ -90,7 +91,7 @@
 }
 
 .slider_img img {
-  max-width: 400px;
+  max-width: 1000px;
   width: 100%;
   margin-left: 70px;
   border-radius: 50%;
@@ -99,6 +100,8 @@
 .container_1 {
   background-color: #dddddd;
   position: relative;
+}
+.container_2 {
 }
 
 .slider_img {
@@ -133,6 +136,7 @@
 }
 
 .Satisfied_client {
+  margin-top: 100px;
   font-size: 20px;
   font-family: "Montserrat-Bold";
   margin-left: 50%;
@@ -144,69 +148,149 @@
   color: #e93656;
 }
 
-.myName{
+.myName {
   font-size: 30px;
-  font-family:'GlacialIndifference-Bold' ;
-
+  font-family: "GlacialIndifference-Bold";
 }
-.position{
-  color:#DAAE19;
+.position {
+  color: #daae19;
   font-size: 14px;
-  font-family: 'Muli-Light';
-  
+  font-family: "Muli-Light";
+  padding-bottom: 20px;
 }
-.aboutMe_information{
+.aboutMe_information {
   max-width: 334px;
-  font-family: 'Muli-Regular';
-
+  font-family: "Muli-Regular";
+  padding-bottom: 30px;
 }
-.informationMe button{
+
+.informationMe button {
   padding: 15px 40px;
-  background-color: #E93656;
+  background-color: #e93656;
   color: aliceblue;
   border: none;
+  margin-left: 27%;
+  margin-bottom: 20px;
+}
+.informationMe {
+  margin-top: 100px;
 }
 
-.myImage{
-  max-width: 430px;
-}
-.mySkill li{
-  list-style-type: none;
-  font-size: 20px;
-  font-family: 'GlacialIndifference-Bold';
-
-}
-.mySkill{
-  
-  max-width: 300px;
-}
-.mySkill li span{
-  color:#e93656;
+.myImage {
+  max-width: 400px;
 }
 
-.Html{
-  border-bottom: solid 9px #e93656 ;
-  max-width: 256px;
-  padding-bottom: 10px;
-}
-.JS{
-  border-bottom: solid 9px #e93656 ;
-  max-width: 190px;
-  padding-bottom: 10px;
-}
-
-.css,
-.Jira{
-  border-bottom: solid 9px #e93656 ;
-  max-width: 270px;
-  padding-bottom: 10px;
-}
-.section_2{
+.section_2 {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
+}
+.progress-container {
+  max-width: 300px;
+  width: 100%;
+  background-color: #f0f0f0;
+  display: grid;
+  gap: 10px;
 }
 
+.progress-bar {
+  height: 100%;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "GlacialIndifference-Bold";
+}
 
+#html-progress {
+  border-bottom: 9px solid #e93656;
+}
 
+#css-progress {
+  border-bottom: 9px solid #e93656;
+}
 
+#js-progress {
+  border-bottom: 9px solid #e93656;
+}
+.PhonenumberIcon {
+  max-width: 50px;
+  border: 2px dashed #ffffff;
+  border-radius: 100%;
+  padding: 5px;
+}
+.addresInfo {
+  max-width: 50px;
+  background-color: #e93656;
+  border-radius: 100%;
+  padding: 10px;
+}
+.location {
+  text-decoration: none;
+}
+.detail_information {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 70px;
+  background-color: #131a36;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.Phone_Number,
+.addres,
+.Email {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.Email img {
+  max-width: 50px;
+  border: 2px dashed #ffffff;
+  border-radius: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Phone_Number p,
+.Phone_Number a,
+.addres p,
+.addres a,
+.Email p,
+.Email a {
+  color: #f0f0f0;
+}
+.section_3 img{
+  max-width: 60px;
+  width: 100%;
+}
+.section_3{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  
+
+}
+
+.Support,
+.manage,
+.QA,
+.annalyse,
+.idea,
+.service{
+  display: inline-block;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:285px;
+  border: 1px solid black;
+  width: 100%;
+  padding: 90px;
+  margin-top: 20px;
+  
+ 
+}
