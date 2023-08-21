@@ -2,17 +2,17 @@ let slideIndex = 0;
 
 function showSlides() {
   const slides = document.querySelectorAll(".slide");
-  
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  
+
   slideIndex++;
-  
+
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
-  
+
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
@@ -47,3 +47,26 @@ function updateProgress() {
   jsProgress.style.width = `${jsWidth}%`;
   jsProgress.textContent = `JS (${Math.round(jsWidth)}) %`;
 }
+
+const slides = document.querySelectorAll(".slide2");
+const slideButtons = document.querySelectorAll(".slide-button");
+const slidshow = document.querySelector(".slideshow_container");
+const recomendation = document.querySelector(".recomendation");
+
+let currentSlideIndex = 0;
+
+function showSlide(index) {
+  slides[currentSlideIndex].style.display = "none";
+  slideButtons[currentSlideIndex].classList.remove("active");
+  currentSlideIndex = index % slides.length;
+  slides[currentSlideIndex].style.display = "block";
+  slideButtons[currentSlideIndex].classList.add("active");
+}
+
+
+for (let i = 0; i < slideButtons.length; i++) {
+  slideButtons[i].addEventListener("click", () => showSlide(i));
+}
+
+
+showSlide(currentSlideIndex);

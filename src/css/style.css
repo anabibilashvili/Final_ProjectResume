@@ -24,6 +24,10 @@
   font-family: "Muli-Regular";
   src: url(/src/font/Muli-Regular.ttf);
 }
+@font-face {
+  font-family: "roboto-Regular";
+  src: url(/src/font/Roboto-Regular.ttf);
+}
 
 * {
   margin: 0;
@@ -263,16 +267,16 @@ a {
 .Email a {
   color: #f0f0f0;
 }
-.section_3 img{
+.section_3 img {
   max-width: 60px;
   width: 100%;
 }
-.section_3{
+.section_3 {
+  margin-top: 200px;
   display: grid;
   grid-template-columns: auto auto auto;
-  
-  
-
+  justify-content: center;
+  gap: 10px;
 }
 
 .Support,
@@ -280,17 +284,87 @@ a {
 .QA,
 .annalyse,
 .idea,
-.service{
-  display: inline-block;
-  margin: auto;
+.service {
+  flex-direction: column;
+  max-width: 285px;
+  width: 100%;
+  border: solid 1px #b9b6b6;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recomendation {
+  margin-top: 200px;
+  background-image: url(/src/img/clip.jpg);
+}
+.slide2 {
+  display: none;
+}
+.slide_info {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+}
+.dev_info {
+  gap: 10px;
   display: flex;
   flex-direction: column;
+}
+.recomentadion_text {
+  max-width: 497px;
+  font-size: 15px;
+  font-family: "roboto-Regular";
+}
+.dev_prof {
+  color: #e93656;
+  font-size: 13px;
+  font-family: "roboto-Regular";
+}
+.dev_Name {
+  font-size: 28px;
+  color: #ffffff;
+  font-family: "roboto-Regular";
+}
+
+.dev_photo {
+  max-width: 140px;
+  border-radius: 100%;
+  border: dotted 4px rgb(255, 239, 239);
+  padding: 5px;
+}
+
+.recomentadion_text,
+.dev_Name {
+  color: #ffffff;
+}
+.slide-buttons {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.slide-button {
+  width: 13px;
+  height: 13px;
+  border: solid 2px #e93656;
+  cursor: pointer;
+}
+.active,
+.slide-button:hover {
+  background-color: #3816cf;
+}
+.slide-button:hover {
+  background-color: #e93656;
+}
+.slideshow_container {
+  padding: 100px;
+
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  max-width:285px;
-  border: 1px solid black;
+}
+
+.slide img {
   width: 100%;
-  padding: 90px;
-  margin-top: 20px;
-  
- 
+  height: auto;
 }
