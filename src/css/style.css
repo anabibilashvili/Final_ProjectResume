@@ -105,8 +105,6 @@
   background-color: #dddddd;
   position: relative;
 }
-.container_2 {
-}
 
 .slider_img {
   max-width: 700px;
@@ -271,8 +269,13 @@ a {
   max-width: 60px;
   width: 100%;
 }
+
 .section_3 {
   margin-top: 200px;
+  gap: 10px;
+}
+
+.services-tab {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
@@ -294,6 +297,55 @@ a {
   justify-content: center;
   align-items: center;
 }
+.hoverElement {
+  display: none;
+}
+
+.Support:hover,
+.manage:hover,
+.QA:hover,
+.annalyse:hover,
+.idea:hover,
+.service:hover {
+  background-color: #131a36;
+  color: #ffffff;
+}
+.main-title2 {
+  font-size: 22px;
+  font-family: "GlacialIndifference-Bold";
+}
+
+.txtHover {
+  font-size: 14px;
+  font-family: "GlacialIndifference-Bold";
+}
+
+.Support:hover .hoverElement,
+.manage:hover .hoverElement,
+.QA:hover .hoverElement,
+.annalyse:hover .hoverElement,
+.idea:hover .hoverElement,
+.service:hover .hoverElement {
+  display: block;
+}
+
+.idea:hover .main-title,
+.service:hover .main-title,
+.annalyse:hover .main-title,
+.QA:hover .main-title,
+.manage:hover .main-title,
+.Support:hover .main-title {
+  display: none;
+}
+.idea:hover img,
+.service:hover img,
+.annalyse:hover img,
+.QA:hover img,
+.manage:hover img,
+.Support:hover img {
+  display: none;
+}
+
 .recomendation {
   margin-top: 200px;
   background-image: url(/src/img/clip.jpg);
