@@ -420,3 +420,81 @@ a {
   width: 100%;
   height: auto;
 }
+.latProj{
+  font-size: 70px;
+  font-family:"GlacialIndifference-Bold" ;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.category{
+  max-width: 250px;
+  width: 100%;
+  background-color: #131a36;
+  color: white;
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: 'GlacialIndifference-Bold';
+  
+
+}
+.box{
+  max-width: 250px;
+  width: 100%;
+}
+.myProject{
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+ 
+}
+.filter{
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 55px;
+  margin-bottom: 150px;
+}
+
+#Icon,
+#Presentation,
+#Logo,
+#MyPortf,
+#SkyHouse,
+#FindHouse{
+  position: relative;
+}
+.myProject p{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  
+}
+.projectText{
+  background-color: #000000;
+  max-width: 250px;
+}
+#Icon:hover .box,
+#Presentation:hover .box,
+#Logo:hover .box,
+#MyPortf:hover .box,
+#SkyHouse:hover .box,
+#FindHouse:hover .box{
+
+  display: none;
+ 
+}
+
+
+
+
+
+
+
