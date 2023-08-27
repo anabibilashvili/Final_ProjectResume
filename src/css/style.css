@@ -296,6 +296,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fafafa;
 }
 .hoverElement {
   display: none;
@@ -420,15 +421,15 @@ a {
   width: 100%;
   height: auto;
 }
-.latProj{
+.latProj {
   font-size: 70px;
-  font-family:"GlacialIndifference-Bold" ;
+  font-family: "GlacialIndifference-Bold";
   display: flex;
   justify-content: center;
   margin-top: 150px;
 }
 
-.category{
+.category {
   max-width: 250px;
   width: 100%;
   background-color: #131a36;
@@ -438,22 +439,18 @@ a {
   gap: 10px;
   padding: 10px 30px;
   font-size: 20px;
-  font-family: 'GlacialIndifference-Bold';
-  
-
+  font-family: "GlacialIndifference-Bold";
 }
-.box{
+.box {
   max-width: 250px;
   width: 100%;
 }
-.myProject{
+.myProject {
   max-width: 900px;
   display: grid;
   grid-template-columns: auto auto auto;
- 
 }
-.filter{
-
+.filter {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -466,18 +463,17 @@ a {
 #Logo,
 #MyPortf,
 #SkyHouse,
-#FindHouse{
+#FindHouse {
   position: relative;
 }
-.myProject p{
-  position:absolute;
+.myProject p {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  
 }
-.projectText{
+.projectText {
   background-color: #000000;
   max-width: 250px;
 }
@@ -486,15 +482,68 @@ a {
 #Logo:hover .box,
 #MyPortf:hover .box,
 #SkyHouse:hover .box,
-#FindHouse:hover .box{
-
+#FindHouse:hover .box {
   display: none;
- 
+}
+.lastArticle {
+  font-size: 70px;
+  font-family: "GlacialIndifference-Bold";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.statia_Maintext {
+  max-width: 470px;
+  font-size: 12px;
+  font-family: "Muli-Light";
 }
 
-
-
-
-
-
+.statia1_part1,
+.statia2_part1 {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 50%;
+  margin-left: 30px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.statia1_title {
+  font-size: 30px;
+  font-family: "GlacialIndifference-Bold";
+  max-width: 304px;
+}
+.freelance {
+  font-size: 10px;
+  color: #b9b6b6;
+}
+.statia_Maintext,
+.statia1_title,
+.freelance {
+  margin-left: 30px;
+}
+.articleTime1 {
+  color: #e93656;
+  font-size: 20px;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+  margin-top: 150px;
+}
+.statia1 {
+  display: flex;
+}
+.statia1_part2 {
+  background-color: #131a36;
+}
+.statia1_part3 {
+  margin-left: 40px;
+}
+.statia2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 58px;
+}
+.statia3 {
+  display: flex;
+}
 
