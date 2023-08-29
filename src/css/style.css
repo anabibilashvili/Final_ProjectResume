@@ -28,6 +28,14 @@
   font-family: "roboto-Regular";
   src: url(/src/font/Roboto-Regular.ttf);
 }
+@font-face {
+  font-family: "roboto-Light";
+  src: url(/src/font/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Jaapokki-Regular";
+  src: url(/src/font/Jaapokki-Regular.ttf);
+}
 
 * {
   margin: 0;
@@ -503,10 +511,9 @@ a {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  max-width: 700px;
-  width: 50%;
-  margin-left: 30px;
-  padding-top: 100px;
+  max-width: 800px;
+  width:100%;
+  padding-top: 170px;
   padding-bottom: 50px;
 }
 .statia1_title {
@@ -538,12 +545,117 @@ a {
 .statia1_part3 {
   margin-left: 40px;
 }
-.statia2 {
+.statia2{
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 58px;
+  margin-left: 30px;
+
 }
-.statia3 {
+
+
+.statia1_part3 img{
+  max-width: 950px;
+  width: 100%;
+}
+.container_5{
+  max-width: 1800px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
+.partnerTittle{
+  font-size: 70px;
+  font-family: "GlacialIndifference-Bold";
+  justify-content: center;
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.partner_list{
+  display: flex;
+  gap: 100px;
+}
+
+
+.partner img{
+  padding: 20px;
+}
+.partnerText{
+  max-width: 164px;
+  font-size: 13px;
+}
+
+.partnerHoverText{
+  display: none;
+  
+  
+}
+
+.partner_1,
+.partner_2,
+.partner_3,
+.partner_4{
+  position: relative
+}
+.partner_1:hover .partnerHoverText,
+.partner_2:hover .partnerHoverText,
+.partner_3:hover .partnerHoverText,
+.partner_4:hover .partnerHoverText{
+  display:block;
+  border: 4px solid crimson;
+  max-width: 230px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-family:"GlacialIndifference-Bold" ;
+  
+}
+.partner_1:hover img,
+.partner_2:hover img,
+.partner_3:hover img,
+.partner_4:hover img{
+  display: none;
+}
+
+footer{
+  background-image:url('../img/map.jpg');
+  max-width: 1920px;
+  width: 100%;
+}
+
+.contactUs{
+  font-size: 40px;
+  font-family: 'Jaapokki-Regula';
+  display: flex;
+  justify-content: center;
+}
+.aboveContactUs{
+  font-size: 17px;
+  font-family:'Roboto_Light' ;
+}
+.small_input input{
+  max-width: 290px;
+  width: 80%;
+  padding:10px;
+
+}
+.message{
+  max-width: 890px;
+  width:80% ;
+  padding:30px;
+}
+
+
+
+
+  
+
+
+
+
+
 
