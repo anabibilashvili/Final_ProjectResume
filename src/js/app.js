@@ -19,34 +19,31 @@ function showSlides() {
 
 showSlides();
 
-document.addEventListener("scroll", updateProgress);
+const skills = [
+  { name: 'html', percent: 80 },
+  { name: 'css', percent: 70 },
+  { name: 'js', percent: 50 },
+];
 
-function updateProgress() {
-  const htmlProgress = document.getElementById("html-progress");
-  const cssProgress = document.getElementById("css-progress");
-  const jsProgress = document.getElementById("js-progress");
+function animateSkillBars() {
+  skills.forEach(skill => {
+    const skillProgress = document.querySelector(`.skill-progress.${skill.name}`);
+    const targetWidth = (skill.percent / 100) * skillProgress.parentElement.offsetWidth;
 
-  const htmlPercent = 50;
-  const cssPercent = 70;
-  const jsPercent = 90;
-
-  const scrollY = window.scrollY;
-  const windowHeight = window.innerHeight;
-  const pageHeight = document.documentElement.scrollHeight;
-
-  const htmlWidth = (scrollY / (pageHeight - windowHeight)) * htmlPercent;
-  const cssWidth = (scrollY / (pageHeight - windowHeight)) * cssPercent;
-  const jsWidth = (scrollY / (pageHeight - windowHeight)) * jsPercent;
-
-  htmlProgress.style.width = `${htmlWidth}%`;
-  htmlProgress.textContent = `HTML (${Math.round(htmlWidth)}) %`;
-
-  cssProgress.style.width = `${cssWidth}%`;
-  cssProgress.textContent = `CSS ( ${Math.round(cssWidth)}) %`;
-
-  jsProgress.style.width = `${jsWidth}%`;
-  jsProgress.textContent = `JS (${Math.round(jsWidth)}) %`;
+    let currentWidth = 0;
+    const animationInterval = setInterval(() => {
+      if (currentWidth >= targetWidth) {
+        clearInterval(animationInterval);
+      } else {
+        currentWidth++;
+        skillProgress.style.width = `${currentWidth}px`;
+      }
+    }, 10); // Adjust the interval for smoother/faster animation
+  });
 }
+
+// Call the function to animate skill bars when the page loads
+animateSkillBars();
 
 const slides = document.querySelectorAll(".slide2");
 const slideButtons = document.querySelectorAll(".slide-button");
