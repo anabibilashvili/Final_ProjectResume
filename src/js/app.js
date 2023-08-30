@@ -67,6 +67,47 @@ function showSlide(index) {
 for (let i = 0; i < slideButtons.length; i++) {
   slideButtons[i].addEventListener("click", () => showSlide(i));
 }
-
-
 showSlide(currentSlideIndex);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sendButton = document.getElementById('submit');
+  const modal = document.getElementById('modal');
+  
+
+
+
+  sendButton.addEventListener('click', function() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const website = document.getElementById('website').value;
+    const message = document.getElementById('messageId').value;
+
+    const formData = {
+      name: name,
+      email: email,
+      website: website,
+      message: message
+    };
+
+    fetch('https://borjomi.loremipsum.ge/api/send-message', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 1) {
+        modal.style.display = 'block'; // Show success modal
+      }
+    })
+    .catch(error => {
+      console.error('Error sending message:', error);
+    });
+  });
+});
+
+
+

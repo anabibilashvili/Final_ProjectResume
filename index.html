@@ -432,23 +432,28 @@
     </div>
     <footer>
 
-      <form>
+      <form id="contact-form">
         <p class="contactUs">CONTACT US</p>
         <p class="aboveContactUs">Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit</p>
           <div class="inputFiled">
             <div class="small_input">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Email Address">
-            <input type="text" placeholder="Your Website">
+            <input id="name" type="text" placeholder="Your Name*">
+            <input id="email" type="text" placeholder="Email Address*">
+            <input id="website" type="text" placeholder="Your Website*">
           </div>
-          <input class="message" type="text" placeholder="Message">
+          <input id="messageId" class="message" type="text" placeholder="Message">
 
           </div>
+          <button id="submit">SEND MESSAGE</button>
 
       </form>
 
     </footer>
+    
+    <div id="modal" style="display: none;">
+      Thank you for getting in touch! We appreciate you contacting us.
+    </div>
    
 
     <script src="src/js/app.js"></script>
