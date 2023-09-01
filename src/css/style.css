@@ -216,11 +216,11 @@
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 20px;
-  font-family: 'GlacialIndifference-Bold';
+  font-family: "GlacialIndifference-Bold";
 }
-.percentig{
-  color: #E93656;
-  font-family:'GlacialIndifference-Bold' ;
+.percentig {
+  color: #e93656;
+  font-family: "GlacialIndifference-Bold";
 }
 
 .skill-bar {
@@ -232,9 +232,8 @@
 
 .skill-progress {
   height: 100%;
-  background-color:#E93656;
+  background-color: #e93656;
   width: 0;
-  
 }
 
 .PhonenumberIcon {
@@ -527,7 +526,7 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  width:100%;
+  width: 100%;
   padding-top: 170px;
   padding-bottom: 50px;
 }
@@ -560,26 +559,23 @@ a {
 .statia1_part3 {
   margin-left: 40px;
 }
-.statia2{
+.statia2 {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 30px;
-
 }
 
-
-.statia1_part3 img{
+.statia1_part3 img {
   max-width: 950px;
   width: 100%;
 }
-.container_5{
+.container_5 {
   max-width: 1800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-.partnerTittle{
+.partnerTittle {
   font-size: 70px;
   font-family: "GlacialIndifference-Bold";
   justify-content: center;
@@ -588,37 +584,34 @@ a {
   margin-bottom: 50px;
 }
 
-.partner_list{
+.partner_list {
   display: flex;
   gap: 20px;
 }
 
-
-.partner img{
+.partner img {
   padding: 20px;
 }
-.partnerText{
+.partnerText {
   max-width: 164px;
   font-size: 13px;
 }
 
-.partnerHoverText{
+.partnerHoverText {
   display: none;
-  
-  
 }
 
 .partner_1,
 .partner_2,
 .partner_3,
-.partner_4{
-  position: relative
+.partner_4 {
+  position: relative;
 }
 .partner_1:hover .partnerHoverText,
 .partner_2:hover .partnerHoverText,
 .partner_3:hover .partnerHoverText,
-.partner_4:hover .partnerHoverText{
-  display:block;
+.partner_4:hover .partnerHoverText {
+  display: block;
   border: 4px solid crimson;
   max-width: 230px;
   padding: 30px 10px;
@@ -626,162 +619,140 @@ a {
   flex-direction: column;
   align-items: center;
   font-size: 14px;
-  font-family:"GlacialIndifference-Bold" ;
-  
+  font-family: "GlacialIndifference-Bold";
 }
 .partner_1:hover img,
 .partner_2:hover img,
 .partner_3:hover img,
-.partner_4:hover img{
+.partner_4:hover img {
   display: none;
 }
 
-footer{
-  background-image:url('../img/map.jpg');
+footer {
+  background-image: url("../img/map.jpg");
   max-width: 1920px;
   width: 100%;
   padding-bottom: 150px;
   margin-top: 100px;
 }
 
-.contactUs{
+.contactUs {
   padding-top: 100px;
   font-size: 40px;
-  font-family: 'Jaapokki-Regular';
+  font-family: "Jaapokki-Regular";
   display: flex;
   justify-content: center;
 }
-.aboveContactUs{
+.aboveContactUs {
   font-size: 17px;
-  font-family:'Jaapokki-Regular' ;
+  font-family: "Jaapokki-Regular";
 }
-.small_input input{
+.small_input input {
   max-width: 290px;
   width: 80%;
-  padding:15px;
-  margin:10px 10px;
-  
-
+  padding: 15px;
+  margin: 10px 10px;
 }
-.message{
+.message {
   max-width: 890px;
-  width:80% ;
-  padding:40px;
+  width: 80%;
+  padding: 40px;
   display: flex;
   margin: 0 auto;
 }
 
-
 .aboveContactUs,
-.small_input{
+.small_input {
   display: flex;
   justify-content: center;
 }
 
-input::placeholder{
+input::placeholder {
   color: #000000;
   font-size: 10px;
-  font-family:'poppinsSemiBold' ;
-
+  font-family: "poppinsSemiBold";
 }
 
-#submit{
-  
+#submit {
   display: flex;
   margin: 0 auto;
   padding: 10px 20px;
-  border: 2px solid #E93656;
+  border: 2px solid #e93656;
   color: #e93656;
   font-size: 12px;
-  font-family:"GlacialIndifference-Bold"
-
+  font-family: "GlacialIndifference-Bold";
 }
-#contact-form{
+#contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-@media (max-width: 1024px)
-{
+@media (max-width: 1024px) {
   .section1_rightTxt,
-  .statia1_part2{
+  .statia1_part2 {
     display: none;
   }
-  .slider-txt span{
+  .slider-txt span {
     font-size: 20px;
   }
   .slider-txt,
   .latProj,
   .lastArticle,
-  .partnerTittle{
+  .partnerTittle {
     font-size: 40px;
   }
   .slider-part,
   .filter,
-  .slideshow_container{
-    display:flex;
+  .slideshow_container {
+    display: flex;
     flex-direction: column;
   }
-  .slider_img img{
+  .slider_img img {
     width: 50%;
   }
   .partner_list,
-  .myProject
-  {
-    display:grid;
+  .myProject {
+    display: grid;
     grid-template-columns: auto auto;
   }
   .services-tab,
-  .detail_information{
+  .detail_information {
     display: grid;
     grid-template-columns: auto;
     justify-items: start;
   }
-.section_2{
-  display: flex;
-  flex-direction: column;
-}
-.category{
-  display: grid;
-  grid-template-columns: auto auto;
-  max-width: 600px;
-}
-.slide_info{
-  display: grid;
-}
-.slide-buttons{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-}
-.myImage{
-  max-width: 200px;
-}
+  .section_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .category {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 600px;
+  }
+  .slide_info {
+    display: grid;
+  }
+  .slide-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .myImage {
+    max-width: 200px;
+  }
 
-.statia1,
-.statia2{
-  display: none;
-}
-.Roca{
-  display: flex;
+  .statia1,
+  .statia2 {
+    display: none;
+  }
+  .Roca {
+    display: flex;
     margin: 0 auto;
+  }
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
-.socialMedia{
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-}
-
-
-
-
-
-
-  
-
-
-
-
-
-
