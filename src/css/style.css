@@ -758,9 +758,21 @@ input::placeholder{
   max-width: 200px;
 }
 
-
-
+.statia1,
+.statia2{
+  display: none;
 }
+.Roca{
+  display: flex;
+    margin: 0 auto;
+}
+.socialMedia{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+}
+
 
 
 

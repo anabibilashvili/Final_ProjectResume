@@ -106,5 +106,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const filterCategory = document.querySelectorAll('.chooseCategory');
+  const items = document.querySelectorAll('.item');
+
+  filterCategory.forEach(button => {
+      button.addEventListener('click', function () {
+          const category = this.getAttribute('data-category');
+
+          items.forEach(item => {
+              const itemCategory = item.getAttribute('data-category');
+              if (category === 'all' || category === itemCategory) {
+                  item.style.display = 'block';
+              } else {
+                  item.style.display = 'none';
+              }
+          });
+      });
+  });
+});
+
 
 
